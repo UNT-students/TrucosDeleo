@@ -313,12 +313,12 @@ public class Main extends javax.swing.JFrame {
                     
                     components.add(new JLabel(i));
                     add(components.get(components.size()-1));
-                    components.get(components.size()-1).setName("hola");
+                    
                     components.get(components.size()-1).setSize(74, 98);
                     components.get(components.size()-1).setLocation(0+k*80, 0+j*100);
                 }
             }
-        setSize(800, 600);
+        
     }
     public static Main w;
     private int etapa=0;
