@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Interfaz;
 
+
+import Interfaz.Imagen;
 import Truco21cartas.Carta;
-import java.awt.Image;
-import java.awt.Toolkit;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
+
 
 /**
  *
@@ -20,17 +14,14 @@ public class FinalTruco extends javax.swing.JFrame {
     /**
      * Creates new form FinalTruco
      */
-    
     public FinalTruco() {
         initComponents();
+       
     }
     
-    Image icon;
     public FinalTruco(Carta c) {
         initComponents();
         setVisible(true);
-        icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("b/Magic 21.png"));
-        setIconImage(icon);
         Imagen i = new Imagen(c.getImg(),98,74);
         jPanel1.add(i);
         jPanel1.repaint();
@@ -49,7 +40,8 @@ public class FinalTruco extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
         setTitle("Final Trick");
 
         jPanel1.setMaximumSize(new java.awt.Dimension(74, 98));

@@ -1,3 +1,8 @@
+
+/*
+Esta clase es una prueba que intenta mostrar una Imagen en un Jpanel. Funciona, pero no es el mejor método.
+*/
+
 package Interfaz;
 
 
